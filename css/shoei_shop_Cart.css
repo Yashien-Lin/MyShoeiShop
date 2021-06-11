@@ -1,0 +1,427 @@
+body{
+    margin: 0;  /*body與視窗左右框架預設距離:8px*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+    height: 100vh;
+    /* min-width: 458px; */
+}
+
+.wrap {
+    min-height: 100%;
+    padding-bottom: 80px;
+    height: 100%;
+}
+
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    height: 80px;  
+    display: flex;
+    align-items: center ;
+    line-height: 80px;
+    min-width: 500px;
+}
+
+
+.header a h1{
+    width: 200px;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+
+.header a {
+    text-decoration: none; 
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none; 
+    line-height: 67px; 
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 85px;
+}
+
+
+.top_bar_for_RWD {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    /* width: 100%; */
+    display: flex;
+    margin: 2px;
+    flex:none;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+.top_bar_for_RWD ul li {
+    list-style: none;
+    margin: 0 20px;
+    width: 95px;
+    text-align: center;
+}
+
+.searchBar {
+    border-radius: 8px;
+    width: 180px;
+    height: 31.5px;
+    font-size: 18px;
+    margin: 10px 3px;
+}
+
+button { 
+    width: 65px;
+    height: 33px;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: inset -1px -1px 3px 1px #000;
+}
+
+.searchBar_all {
+    /* margin-left: auto; */
+    display: flex;
+    align-items: center;
+}
+
+.outer_searchBar_all {
+    margin-left: auto;
+    margin-top: 16px ;
+    margin-bottom: 16px;
+}
+
+
+.main_title {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+
+.outer_row {
+    /* float: right; */
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    /* margin-left: auto; */
+    margin-left: auto;
+}
+
+.cart_row {
+    display: flex;
+    margin: 0 auto ; 
+}
+
+
+.item {
+    width: 105px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin: 0 3px;
+}
+
+.cart_row > .item {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Cart_outer_container {
+    /* margin: 20px; */
+    height: 115vh;
+}
+
+h2 {
+    margin: 30px 10px;
+}
+
+.product_outer_row{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* margin: 0 auto; */
+    padding: 3.9px 0;
+    margin: 0 10px 0 auto;
+}
+
+
+.product_inner_row_left {
+    display: flex;
+    /* margin: 0 auto; */
+    width: 50%;
+    align-items: center; 
+    /*Why要加上這段才會垂直置中? 右邊區塊就不用*/
+    justify-content: center;
+}
+
+
+.product_inner_row_right{
+    display: flex;
+    width: 47%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product_pic {
+   margin-right: 20px; 
+}
+
+
+.product_title a{
+    text-decoration: none;
+    color: black;
+}
+
+
+img {
+    width: 100px;
+}
+
+
+
+#qtyBar {
+    width: 40%;
+    min-width: 23px;
+}
+
+
+.product_inner_row_bottom {
+    margin: 0 20px 0 auto;
+    display: flex;
+    /* justify-content:flex-end; */
+    width: 56%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.outer_check_out {
+    display: flex;
+    margin: 0 10px 0 auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+#check_out_button {
+    margin: 20px 0px 5px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 3px grey;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width: 100px;
+    height: 45px;
+}
+
+
+#check_out_button a{
+    text-decoration: none;
+    color: white;
+    min-width: 32px
+}
+
+
+.footer {
+    background-color: black;
+    height: 80px;
+    text-align: center;
+}
+
+
+.footer_container a{
+    color:white;
+    text-decoration: none; /*移除超連結底線*/
+    line-height: 80px; 
+    font-size: 18px;
+    /* box-sizing: border-box; */
+    
+}
+
+
+@media (min-width:700px) {
+    .horizon {
+        display:none;
+    }
+    
+}
+
+
+@media (max-width:500px) {
+
+    .product_pic a img {
+        display: none;
+        width: 80px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    
+    .wrap {
+        min-width: 100%;
+    }
+
+    .header {
+        display: block;
+        height: auto;
+        min-width: 100%;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        display: block;
+        /* margin:0 auto; */
+        text-align: center;  
+    }
+
+
+    .header .logo h1 {
+        width: 100%;
+        font-size:30px;
+    }
+
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+        line-height: 65px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .top_bar_for_RWD {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    .top_bar_for_RWD .menu .nav_item > a {
+        padding: 0;
+    }
+
+
+    .outer_searchBar_all {
+        margin: 10px auto ;
+        
+    }
+
+    .horizon {
+        display: block;
+        border: 0;
+        height: 2px;
+        /* background: white; */
+        background-image: linear-gradient(to right, white, #333, white);
+    }
+
+
+    .main_title {
+        font-size: 17px;
+    }
+
+    .searchBar {
+        width: 180px;
+        height: 31.5px;
+        font-size: 18px;
+        margin: 10px 3px;
+    }
+
+    .search {
+        width: 65px;
+        height: 33px;
+        font-size: 15px;
+        font-weight: 550;
+        background-color: lightgray;
+        cursor: pointer;
+        box-shadow: inset -1px -1px 3px 1px #000;
+    }
+
+    .outer_div {
+        /* width: 100%; */
+
+    }
+
+    .outer_row{
+        justify-content:flex-end;
+    }
+
+    .product_outer_row {
+        font-size: 14px;
+        margin: 0 10px 0 0;
+    }
+
+    .product_pic a img {
+        /* display: none; */
+        width: 80px;
+    }
+
+    .top_bar_for_RWD ul li {
+        width: 85px;
+    }
+
+    .footer_container a {
+        font-size: 15px; 
+    }
+
+    .cart_row > .item {
+        margin: 0px -6px;
+        width: 80px;
+    }
+
+    .Cart_outer_container{
+        width: auto;
+    }
+
+    /* .Cart_inner_container{
+
+    }  */
+
+    .total_amount{
+        text-align:right;
+        width: 118px;
+    }   
+    
+    .product_inner_row_left {
+        justify-self: flex-start;
+    }
+
+}

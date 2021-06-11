@@ -1,0 +1,669 @@
+body{
+    margin: 0;  /*body與視窗左右框架預設距離:8px*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+    height: 100vh;
+
+}
+
+.wrap {
+    min-height: 100%;
+    padding-bottom: 80px;
+    height: 100%;
+}
+
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    height: 80px;  
+    display: flex;
+    align-items: center ;
+    line-height: 80px;
+    min-width: 500px;
+}
+
+
+.header a h1{
+    width: 200px;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+
+.header a {
+    text-decoration: none; 
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none; 
+    line-height: 67px; 
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 85px;
+}
+
+
+.top_bar_for_RWD {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    /* width: 100%; */
+    display: flex;
+    margin: 2px;
+    flex:none;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+.top_bar_for_RWD ul li {
+    list-style: none;
+    margin: 0 20px;
+    width: 95px;
+    text-align: center;
+}
+
+.searchBar {
+    /* font-size: 16px;
+    width: 150px;
+    margin:1px;
+    height: 28px;
+    border-radius: 8px; */
+    
+    border-radius: 8px;
+    width: 180px;
+    height: 31.5px;
+    font-size: 18px;
+    margin: 10px 3px;
+}
+
+button { 
+    /* width: 48px;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 26px;
+    margin: 0 3px; */
+    
+    width: 65px;
+    height: 33px;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: inset -1px -1px 3px 1px #000;
+}
+
+.searchBar_all {
+    /* margin-left: auto; */
+    display: flex;
+    align-items: center;
+}
+
+.outer_searchBar_all {
+    margin-left: auto;
+    margin-top: 16px ;
+    margin-bottom: 16px;
+}
+
+
+
+.banner_pic {
+    height: 250px;  /*why: 100%不行??*/
+    background-size: 100%;
+    background-image: url("../images/shoe.jpg");
+    background-position: bottom 30px ;
+}
+
+.main_title {
+    padding: 10px;
+    margin: 30px 10px;
+    font-weight: bolder;
+    font-size: 28px;
+    color: rgb(46, 46, 46);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 20px;
+    justify-content: center;
+    padding-bottom: 80px;
+    min-height: 100%;
+}
+
+
+.product {
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    height: 270px;
+    font-family: sans-serif;
+    
+}
+
+.product a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.title {
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+.img_1 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;  
+} 
+
+.img_1 img {
+    width: 200px;
+    margin-top:-50px;
+}
+
+
+
+.img_2 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;
+} 
+
+.img_2 img {
+    width: 200px;
+    margin-top:-49px;
+    margin-right: 7px;
+}
+
+.img_3 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;
+} 
+
+.img_3 img {
+    width: 200px;
+    margin-top: -25px;
+}
+
+
+.img_4 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;
+    
+} 
+
+.img_4 img {
+    width: 200px;
+    margin-top: -60px;
+    margin-right: 30px;
+}
+
+
+.img_5 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;
+    
+} 
+
+.img_5 img {
+    width: 200px;
+    margin-top: -50px;
+}
+
+
+.img_6 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;
+    
+} 
+
+.img_6 img {
+    width: 200px;
+    margin-top: -45px;
+}
+
+
+
+.img_7 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;
+    
+} 
+
+.img_7 img {
+    width: 200px;
+}
+
+.img_8 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #ccc;
+    margin-left: 35px;  
+} 
+
+.img_8 img {
+    width: 310px;
+    margin-top: -68px;
+    margin-left: -38px;
+}
+
+.inner_all {
+    /* width: 985px; */
+    max-width: 100%;
+    margin: 0 auto;    
+    background-color: lightgrey;
+}
+
+
+.innerPage_container {
+    width: 985px;
+    max-width: 100%;
+    margin: 50px auto 30px;    
+    background-color: lightgrey;
+    display: flex;   
+    justify-content: center;
+}
+
+.big_box_left{
+    width: 50%;
+    display:flex;  
+    flex-wrap:wrap;
+    justify-content: center; 
+    margin: 5px;
+}
+
+.product_gallery_left {
+    display: flex;
+    align-items: center; 
+    text-align:center;
+    width: 400px;
+    margin: 20px 5px 10px;   
+    overflow: hidden;  
+    
+}
+
+
+.product_gallery_left img{
+    width: 100%; 
+}
+
+
+.display_small_box{
+    margin: 0 15px;
+}
+
+.display_small_box ul {
+    display:flex;
+    justify-content:center;
+    padding: 0px;
+    margin: 0 ;
+}
+
+.display_small_box li {
+    padding: 3px;   
+}
+
+.display_small_box li img {
+    width: 100%;
+}
+
+
+
+.display_small_box li:hover {
+    cursor: pointer;
+}
+
+.pic_note_left {
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+.product_info_right {
+    width: 50%;
+    margin: 0 13px;
+}
+
+h2 {
+    margin: 20px 0 0 0;
+}
+
+h3 {
+    margin: 13px 0;
+}
+
+
+#size_selector {
+    margin: 3px 0px;
+    font-size: 14px;
+    height: 26px;
+    width: 130px;
+    box-shadow: 1px 1px 1px 1px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#qty_selector{
+    margin: 3px 0px;
+    font-size: 14px;
+    height: 26px;
+    width: 80px;
+    box-shadow: 1px 1px 1px 1px;
+    cursor: pointer;
+    border-width: 1px ;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+.div_selector {
+    margin-top: 3px;
+}
+
+.div_addToCart {
+    margin: 10px 0 0;
+}
+
+
+#addToCart {
+    margin: 20px 0px 5px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 3px grey;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* display:flex; */
+    align-items:center;
+    width: 148px;
+    height: 45px;
+}
+
+
+
+.div_size_chart {
+    margin: 30px 20px 20px 0px;
+    
+}
+
+.size_chart {
+    font-size: 8px;
+}
+
+
+.size_chart img{
+    width: 90%;  
+}
+
+.size_chart p {
+    word-break: break-all;
+}
+
+
+.box-shop_info pre {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0 15px 0 30px;
+    white-space:pre-line;
+    width: 90%;
+    text-align: center;
+}
+
+
+.big_box_bottom_intro_pics {
+    width: 100%;
+    text-align: center;
+}
+
+
+.intro_pics ul {
+    padding: 0;
+}
+
+
+.intro_pics ul img{
+    padding: 20px;
+    width:80%;
+}
+
+
+.footer {
+    background-color: black;
+    height: 80px;   
+    text-align: center;
+    bottom:0 ; 
+    width: 100%;       
+}
+
+
+.footer_container a{
+    color:white;
+    text-decoration: none; 
+    line-height: 80px; 
+    font-size: 18px;   
+}
+
+@media (min-width:700px) {
+    .horizon {
+        display:none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    
+    .wrap {
+        min-width: 100%;
+    }
+
+    .header {
+        display: block;
+        height: auto;
+        min-width: 100%;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        display: block;
+        /* margin:0 auto; */
+        text-align: center;  
+    }
+
+
+    .header .logo h1 {
+        width: 100%;
+        font-size:30px;
+    }
+
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+        line-height: 65px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .top_bar_for_RWD {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .menu > ul > li {
+        text-align: center;
+        
+    } */
+
+    /* .top_bar_for_RWD {
+        border: 1px solid white;
+    } */
+
+    /* .top_bar_for_RWD .menu .nav_item {
+        margin: -5px 0;
+    } */
+
+
+    .top_bar_for_RWD .menu .nav_item > a {
+        padding: 0;
+    }
+
+
+    .outer_searchBar_all {
+        margin: 10px auto ;
+        
+    }
+
+    .horizon {
+        display: block;
+        border: 0;
+        height: 2px;
+        /* background: white; */
+        background-image: linear-gradient(to right, white, #333, white);
+    }
+
+    .banner_pic {
+        height: 130px;
+        min-width: 100%;
+    }
+
+    .main_title {
+        font-weight: bolder;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .searchBar {
+        width: 180px;
+        height: 31.5px;
+        font-size: 18px;
+        margin: 10px 3px;
+    }
+
+    .search {
+        width: 65px;
+        height: 33px;
+        font-size: 15px;
+        font-weight: 550;
+        background-color: lightgray;
+        cursor: pointer;
+        box-shadow: inset -1px -1px 3px 1px #000;
+    }
+
+    .product {
+        overflow: hidden;
+        width: 48%;
+        height: 48%;
+        padding: 3px 3px;
+    }
+
+    .container {
+        margin: 10px;
+        padding-bottom: 40px;
+    }
+    
+    [class*="img_"]{
+        margin-left: 0;
+        width: 200px;
+        margin: auto;   
+    }
+    
+    /* .footer_container {
+        width: 80%;
+    } */
+
+    .footer_container a {
+        font-size: 15px; 
+    }
+
+    .innerPage_container {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .box-shop_info pre {
+        font-size: 14px;
+        white-space:pre-line;
+        width: 80%;
+        text-align: center;
+        color: crimson;
+    }
+
+    .big_box_left{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .product_info_right {
+        width: 100%;
+        /* margin: 0px 36px; */
+    }
+
+    .inner_all {
+        /* width: 985px; */
+        max-width: 100%;
+        margin: 0 20px; 
+    }
+
+    .size_chart p {
+        word-break: break-all;        
+    }
+
+    .box-default h2 {
+        font-size: 22px;
+        /* padding: 0 53px 0 15px; */
+    }
+    
+    .box-default {
+        padding: 0px 13px;
+    }
+
+    .top_bar_for_RWD ul li {
+        width: 85px;
+    }
+
+    .size_chart{
+        text-align: center;
+    }
+
+
+}

@@ -1,0 +1,131 @@
+body{
+    margin: 0;  /*body與視窗左右框架預設距離:8px*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    height: 80px;  
+    display: flex;
+    align-items: center ;
+    line-height: 80px;
+    /* text-align: center; */
+    
+
+}
+
+.header a h1{
+    
+    width: 150px;
+    margin: 0;
+    color: white;
+    /* line-height: 80px; */
+}
+
+
+.header a {
+    text-decoration: none; /*移除超連結底線*/
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none; /*移除超連結底線*/
+    line-height: 80px; 
+    padding: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+    
+}
+.menu {
+    /* margin-left: 45px; */
+    width: 100%;
+    display: flex;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+.searchBar {
+    /* line-height: 80px; */
+    /* margin-left: auto; */
+    /* justify-content: flex-end; */
+    font-size: 16px;
+    /* display:block; */
+    /* text-align: right;
+    display:inline; */   
+    /* float:right; */
+}
+
+
+.searchBar_all {
+    margin-left: auto;
+
+}
+
+
+
+.banner_pic {
+    height: 250px;  /*why: 100%不行??*/
+    /* width: 100%; */
+    background-size: 100%;
+    background-image: url("../images/shoe.jpg");
+    background-position: bottom 30px ;
+}
+
+.main_title {
+    padding: 10px 10px 0;
+    margin: 20px 10px 0px;
+    font-weight: bolder;
+    font-size: 28px;
+    color: rgb(46, 46, 46);
+}
+
+.container {
+    height: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: 5px 10px 60px;
+    justify-content: center;
+    /* margin: auto; */
+    /* display:inline;  */
+    /* display:inline-block; */
+}
+
+.container p {
+    line-height: 36px;
+    text-align: center;
+    margin: 16px 0 35px;
+}
+
+.img_div img{
+    display: block;
+    width: 40%;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin: auto;
+}
+
+
+.footer {
+    background-color: black;
+    height: 80px;
+    text-align: center;
+}
+
+
+.footer_container a{
+    color:white;
+    text-decoration: none; /*移除超連結底線*/
+    line-height: 80px; 
+    font-size: 18px;
+    /* box-sizing: border-box; */
+    
+}
